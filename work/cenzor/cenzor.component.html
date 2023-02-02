@@ -1,0 +1,12 @@
+
+<hr>
+<div [class]='badWordsForm'>
+<p [class]='badTitle'>Bad words: <span [class]='badContent' >{{ badContenNew | json }}</span></p>
+<div>
+  <input type="text" [class]='inputBadContent'  placeholder="Please write a word!" [(ngModel)]='badWord'>
+  <input type="button" value="Add" [class]='addBadContent' (click)="badValue()">
+  <input type="button" value="Reset" [class]='resetBadContent'(click)="resetBadValue()">
+</div>
+<textarea [class]='inputText' placeholder="text here..."[(ngModel)]='textForCheckUp' ></textarea><br>
+<input type="button" value="Cenzor" [class]=' cenzor' (click)="checkUpText()">
+</div>

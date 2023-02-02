@@ -1,0 +1,38 @@
+<div class="user">
+<form class="form">
+   <p >Login</p>
+   <input [class]="loginInput" type="text" placeholder="Enter login" required [(ngModel)]="users.login" name="login">
+   <p >Password</p>
+   <input class="password" type="password" placeholder="Enter password" required [(ngModel)]="users.password" name="pass" autocomplete="on">
+   <p >Email address</p>
+   <input class="email" type="email" placeholder="Enter email" required [(ngModel)]="users.email" name="email"><br><br>
+   <p [class] = 'messege'>check, maybe you entered the data incorrectly</p>
+   <input *ngIf="!editStatus" class="addButton" (click)="addUser()" type="button" value="Add user"   >
+   <input *ngIf="editStatus" class="editUser" (click)="saveEditUser()" type="button" value="Save user" name="some">
+ </form>
+ <table class="table">
+ <thead >
+ <tr class="heder">
+    <td class="heder_p">  #</td>
+    <td class="heder_p">   Login</td>
+    <td class="heder_p">   Password</td>
+    <td class="heder_p">Email</td>
+    <td class="heder_p">Edit</td>
+    <td class="heder_p">Delete</td>
+ </tr>
+ </thead>
+ <tbody class="tbody">
+ 
+   <tr *ngFor="let user of userTable;index as i">
+   <td>{{i+1}}</td>
+   <td>{{user.login }}</td>
+   <td>{{user.password}}</td>
+   <td>{{user.email}}</td>
+   <td><input class="edit_button" type="button" value="edit" name="som" (click)="edite(i)"></td>
+   <td><input type="button" value="delete"class="delete_button" (click)="delete(i)" ></td>
+ </tr>
+ 
+ 
+ </tbody>
+ </table>
+</div>

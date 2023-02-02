@@ -1,0 +1,14 @@
+<div class="container">
+<header>
+   <nav class="nav-bar">
+      <li>Last work>></li>
+      <li [routerLink]="[ 'cenzor']"  routerLinkActive="active" >Cenzor</li>
+      <li [routerLink]="[ 'user']"  routerLinkActive="active">User</li>
+      <li [routerLink]="[ 'task']"  routerLinkActive="active">Task</li>
+      <li [routerLink]="[ '/home']">Bakc to >> Home</li>
+   </nav>
+</header>
+
+   <router-outlet></router-outlet>
+
+</div>

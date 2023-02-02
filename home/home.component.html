@@ -1,0 +1,31 @@
+<div class="container">
+
+<hr>
+<div class="list">
+<div class="block-task ">
+  <div class="img cenzor"></div>
+  <br>
+  <span class="name-block-task "> Angular list of prohibited words</span><br>
+  <hr>
+  <button class="details-btn" [routerLink]="[ '/work/cenzor']">details</button>
+</div>
+
+<div class="block-task">
+  <div class="img task"></div>
+  <br>
+  <span class="name-block-task"> Angular task list</span><br>
+  <hr>
+  <button class="details-btn" [routerLink]="[ '/work/task']">details</button>
+</div>
+<div class="block-task">
+  <div class="img user"></div>
+  <br>
+  <span class="name-block-task"> Angular user list</span><br>
+  <hr>
+  <button class="details-btn" [routerLink]="[ '/work/user']">details</button>
+</div>
+</div>
+<main>
+   <router-outlet></router-outlet>
+</main>
+</div>

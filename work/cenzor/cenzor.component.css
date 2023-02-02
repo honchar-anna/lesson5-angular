@@ -1,0 +1,117 @@
+.title {
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: normal;
+}
+
+.badWordsForm {
+   margin: auto;
+   width: 300px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 9px;
+
+}
+
+.badTitle {
+   margin-bottom: 5px;
+}
+
+.badContent {
+   color: red
+}
+
+.inputBadContent {
+   width: 60%;
+   height: 20px;
+   outline: none;
+   border-radius: 3px;
+   border: .5px solid lightslategray;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 8px;
+   padding-left: 7px;
+   color: rgba(119, 136, 153, 0.829);
+   margin-bottom: 5px;
+   margin-right: 2px;
+   box-sizing: border-box;
+}
+
+.inputBadContent:focus {
+   box-shadow: 0px 0px 5px 1px rgb(101, 174, 220);
+}
+
+.addBadContent {
+   width: 19%;
+   height: 20px;
+   font-size: 8px;
+   border-radius: 3px;
+   outline: none;
+   border-color: transparent;
+   margin-right: 2px;
+   background-color: orange;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.addBadContent:focus {
+   box-shadow: 0px 0px 0px 2px rgba(241, 188, 28, 0.473);
+
+}
+
+.resetBadContent {
+   width: 19%;
+   height: 20px;
+   font-size: 8px;
+   border-radius: 3px;
+   border-color: transparent;
+   color: white;
+   background-color: brown;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.resetBadContent:focus {
+   box-shadow: 0px 0px 0px 2px rgba(165, 42, 42, 0.581);
+}
+
+.inputText {
+   width: 96%;
+   height: 40px;
+   border-radius: 3px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 8px;
+   padding-left: 7px;
+   color: rgba(119, 136, 153, 0.829);
+   outline: none;
+   border-radius: 3px;
+   border: .5px solid lightslategray;
+
+
+}
+
+.inputText:focus {
+   box-shadow: 0px 0px 5px 1px rgb(101, 174, 220);
+
+}
+
+.cenzor {
+   width: 99%;
+   height: 20px;
+   font-size: 8px;
+   border-radius: 3px;
+   outline: none;
+   border-color: transparent;
+   margin-right: 2px;
+   color: white;
+   background-color: rgb(36, 156, 36);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.red{
+   box-shadow: 0px 0px 5px 1px rgba(165, 42, 42, 0.581);
+   border: .5px solid rgba(165, 42, 42, 0.581);
+
+}
+.red::placeholder{
+   color: rgb(252, 0, 0);
+}

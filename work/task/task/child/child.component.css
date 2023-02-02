@@ -1,0 +1,58 @@
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+tr,
+th,
+td {
+  border-bottom: 1px solid rgb(189, 181, 181);
+  padding: 15px;
+  text-align: start;
+  font-weight: 900;
+}
+tr:hover td {
+  background-color: rgb(207, 201, 201);
+}
+.nameTask {
+  color: rgb(109, 108, 108);
+  font-weight: 200;
+}
+.progress {
+  color: rgb(252, 19, 19);
+  font-weight: 400;
+}
+.done {
+  color: green;
+  font-weight: 400;
+}
+.editBtn,
+.deleteBtn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: rgba(255, 173, 22, 0.938);
+  border: 1px solid rgb(211, 138, 2);
+
+}
+  .editBtn:focus {
+
+    font-size: 14px;
+    box-shadow: -2px -2px 3px 1px rgb(189, 181, 181);
+  }
+
+.deleteBtn {
+  background-color: rgb(252, 19, 19);
+  border: 1px solid rgb(155, 9, 9);
+
+  color: rgb(255, 255, 255);
+}
+  .deleteBtn:focus {
+    box-shadow: inset 1px 1px 7px 3px rgb(155, 9, 9);
+    box-shadow: -2px -2px 3px 1px rgb(189, 181, 181);
+  }
+  .deleteBtn:disabled{
+    color: rgb(207, 201, 201);
+    font-weight: 200;
+ }

@@ -1,0 +1,20 @@
+<div class="task">
+   <h1 class="task-top">Plan your day! </h1>
+   <h1 class="task-top">User: {{user}}. Count of Task {{count}} </h1>
+   <section>
+       <input type="text" class="task-input" [(ngModel)]="pushName">
+       <input type="button" class="task-addBtn" value="Add"
+           (click)="addName()">
+   </section>
+
+   <app-child [newTask]="taskName"
+       (countLength)="getlength($event)"
+       (changeTask)="getName($event)">
+   </app-child>
+
+   <div *ngIf="save" class="task-change">
+       <input type="text" class="task-change-input" [(ngModel)]="getTask">
+       <input type="button" class="task-change-btn" value="save"
+           (click)="reName()">
+   </div>
+</div>
